@@ -18,6 +18,16 @@ Este repositório apresenta uma versão demonstrativa, sem dados reais ou inform
 - **Limpeza automática dos campos:** prepara a planilha para a próxima operação após o registro.
 - **Controle de diferentes categorias de materiais:** organiza os registros em áreas específicas da planilha.
 
+## 📸 Demonstração
+
+### Tela de controle de estoque
+
+![Tela de controle de estoque](docs/imagens/estoque.png)
+
+### Histórico de movimentações
+
+![Histórico de movimentações](docs/imagens/historico.png)
+
 ## 🛠️ Tecnologias utilizadas
 
 - Microsoft Excel
