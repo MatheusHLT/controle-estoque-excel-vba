@@ -52,6 +52,12 @@ O código-fonte VBA pode ser consultado na pasta `src/`.
 
 **Atenção:** habilite macros somente em arquivos de origem confiável. Este projeto não deve ser utilizado para controlar estoque real sem testes e validações adequados.
 
+## 📥 Planilha demonstrativa
+
+[Baixar a planilha Excel (.xlsm)](docs/exemplos/controle-estoque-demonstracao.xlsm)
+
+Consulte também as [instruções de utilização](docs/exemplos/instrucoes.md).
+
 ## 👨‍💻 Autor
 
 **Matheus Honorato**
