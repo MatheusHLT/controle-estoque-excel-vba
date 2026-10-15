@@ -1,59 +1,57 @@
 # Instruções de Utilização
 
-Este documento apresenta as instruções básicas para utilizar a planilha demonstrativa de controle de estoque, desenvolvida com Microsoft Excel, VBA e fórmulas.
+Este documento explica como testar a planilha demonstrativa de controle de estoque, desenvolvida com Microsoft Excel, VBA e fórmulas.
 
 ## 1. Requisitos
 
-Para utilizar a planilha, você precisará de:
+- Microsoft Excel para Windows com suporte a macros VBA.
+- O arquivo `controle-estoque-demonstracao.xlsm`, disponível nesta pasta do repositório.
 
-- Microsoft Excel para Windows, com suporte a macros VBA.
-- O arquivo demonstrativo do projeto.
-- Macros habilitadas, caso sejam necessárias para executar as funcionalidades automatizadas.
+**Segurança:** habilite macros somente se tiver confiança na origem do arquivo e tiver verificado o código. Não desative globalmente as proteções de segurança do Excel para executar a planilha.
 
-**Atenção:** habilite macros somente em arquivos cuja origem você considere confiável.
+## 2. Abrir a planilha
 
-## 2. Organização da planilha
+1. Baixe o arquivo `controle-estoque-demonstracao.xlsm` do repositório.
+2. Abra-o no aplicativo Microsoft Excel para Windows.
+3. Se o Excel apresentar avisos de segurança, leia-os antes de decidir se permite o conteúdo ativo. As macros são necessárias para executar os botões de registro.
+4. Utilize a versão demonstrativa com os dados fictícios fornecidos; evite inserir informações pessoais ou dados reais de uma organização.
 
-A planilha possui abas destinadas ao controle do estoque e ao registro das movimentações.
+## 3. Organização das abas
 
-- **Estoque:** apresenta os materiais cadastrados e suas quantidades disponíveis.
-- **Registro:** armazena o histórico de movimentações dos materiais.
-- **EstoqueLampada:** contém o controle de estoque de outra categoria de materiais.
-- **RegistroLampada:** armazena o histórico de movimentações dessa categoria.
+- **Estoque:** apresenta os materiais e as quantidades disponíveis, além das áreas para registrar entradas e retiradas.
+- **Registro:** contém o histórico das movimentações de materiais dessa categoria.
+- **EstoqueLampada:** apresenta o controle da categoria de lâmpadas e a área para registrar suas movimentações.
+- **RegistroLampada:** contém o histórico das movimentações de lâmpadas.
 
-## 3. Registro de entrada de materiais
+## 4. Registrar uma entrada
 
-A entrada representa o recebimento de materiais e o acréscimo de suas quantidades ao estoque.
+1. Abra a aba correspondente ao tipo de material que deseja movimentar.
+2. Na área de entrada, preencha o nome do responsável, a data e as quantidades dos materiais recebidos.
+3. Clique no botão **REGISTRAR ENTRADA**.
+4. Confira se as quantidades disponíveis foram atualizadas e se a movimentação aparece na aba de registro correspondente.
 
-1. Acesse a área destinada ao registro de entrada.
-2. Informe os dados solicitados, como responsável, data e quantidades.
-3. Execute a macro correspondente à entrada.
-4. Confira se as quantidades foram atualizadas e se a movimentação foi registrada no histórico.
+## 5. Registrar uma retirada
 
-## 4. Registro de retirada de materiais
+1. Abra a aba correspondente ao tipo de material que deseja movimentar.
+2. Na área de retirada, preencha o nome do responsável, a data e as quantidades dos materiais retirados.
+3. Clique no botão **REGISTRAR RETIRADA**.
+4. Confira se as quantidades disponíveis foram atualizadas e se a movimentação aparece na aba de registro correspondente.
 
-A retirada representa a saída de materiais do estoque.
+As macros de retirada verificam as quantidades informadas e a disponibilidade no estoque, impedindo retiradas superiores ao saldo disponível.
 
-1. Acesse a área destinada ao registro de retirada.
-2. Informe os dados solicitados, como responsável, data e quantidades.
-3. Execute a macro correspondente à retirada.
-4. Confira se as quantidades foram atualizadas e se a movimentação foi registrada no histórico.
+## 6. Validações e alertas
 
-As macros de retirada possuem verificações para impedir quantidades negativas e retiradas superiores ao estoque disponível.
+A planilha combina validação de dados do Excel com verificações implementadas em VBA. Os campos configurados com validação podem restringir os valores aceitos. As macros também verificam condições necessárias para registrar entradas e retiradas.
 
-## 5. Validações e alertas
+Fórmulas do Excel sinalizam materiais que precisam de reposição, conforme os limites configurados na planilha.
 
-A planilha utiliza recursos de validação de dados do Excel e verificações implementadas em VBA para auxiliar no preenchimento correto das informações.
+## 7. Consultar o histórico
 
-Também utiliza fórmulas para sinalizar situações de estoque baixo, facilitando a identificação de materiais que precisam de reposição.
+Após registrar uma operação, abra a aba **Registro** ou **RegistroLampada**, de acordo com a categoria utilizada. O histórico apresenta informações da movimentação, como responsável, data, tipo de operação e quantidades registradas.
 
-## 6. Histórico de movimentações
+## 8. Observações
 
-Após uma operação realizada pelas macros, consulte a aba de registro correspondente para verificar as informações da movimentação, incluindo responsável, data, tipo de operação e quantidades registradas.
-
-## 7. Observações
-
-- Utilize dados fictícios ao testar a versão demonstrativa.
-- Confira as quantidades e os registros após cada operação.
-- Evite alterar manualmente as células utilizadas pelas macros, pois isso pode interferir no funcionamento da planilha.
-- Este projeto tem finalidade demonstrativa e pode ser aprimorado conforme novas necessidades.
+- Utilize apenas os dados fictícios da versão demonstrativa ao testar o projeto.
+- Confira o estoque e o histórico após cada operação.
+- Evite alterar, mover ou excluir células e botões utilizados pelas macros, pois isso pode afetar o funcionamento da planilha.
+- Este projeto tem finalidade demonstrativa e não deve ser utilizado para controlar estoque real sem testes e validações adicionais.
