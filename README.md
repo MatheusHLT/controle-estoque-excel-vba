@@ -65,4 +65,4 @@ Consulte também as [instruções de utilização](docs/exemplos/instrucoes.md).
 Estudante de Sistemas de Informação no Centro Universitário de Belo Horizonte (UniBH), com interesse em desenvolvimento de software, automação de processos e tecnologia.
 
 - GitHub: [MatheusHLT](https://github.com/MatheusHLT)
-- LinkedIn: [Matheus Honorato](https://www.linkedin.com/in/matheushonorato-lt/)
+- LinkedIn: [Matheus Honorato](https://www.linkedin.com/in/matheus-honorato-lt/)
