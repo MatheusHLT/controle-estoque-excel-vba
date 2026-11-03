@@ -190,7 +190,7 @@ Entre os principais objetivos estão:
 
 **Matheus Honorato**
 
-Estudante de Sistemas de Informação no Centro Universitário de Belo Horizonte (UniBH), com interesse em desenvolvimento de software, automação de processos e tecnologias Microsoft.
+Estudante de Sistemas de Informação na UniBH, interessado em desenvolvimento de software, automação de processos, programação e tecnologias Microsoft, especialmente C#, .NET, Python, Java e VBA.
 
 - **GitHub:** [MatheusHLT](https://github.com/MatheusHLT)
 - **LinkedIn:** [Matheus Honorato](https://www.linkedin.com/in/matheus-honorato-lt/)
